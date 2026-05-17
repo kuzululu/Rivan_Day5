@@ -648,7 +648,7 @@ boot
 ~~~
 !@CoreTAAS
 conf t
- hostname coreTaas-#$34T#
+ hostname coreTaas-52
  enable secret pass
  service password-encryption
  no logging console
@@ -663,19 +663,19 @@ conf t
   exec-timeout 0 0
  int vlan 1
   no shut
-  ip add 10.#$34T#.1.2 255.255.255.0
+  ip add 10.52.1.2 255.255.255.0
   desc DEFAULT-VLAN
  int vlan 10
   no shut
-  ip add 10.#$34T#.10.2 255.255.255.0
+  ip add 10.52.10.2 255.255.255.0
   desc WIFI-VLAN
  int vlan 50
   no shut
-  ip add 10.#$34T#.50.2 255.255.255.0
+  ip add 10.52.50.2 255.255.255.0
   desc CCTV-VLAN
  int vlan 100
   no shut
-  ip add 10.#$34T#.100.2 255.255.255.0
+  ip add 10.52.100.2 255.255.255.0
   desc VOICE-VLAN
  end
 ~~~
@@ -685,7 +685,7 @@ conf t
 ~~~
 !@CoreBABA
 conf t
- hostname coreBaba-#$34T#
+ hostname coreBaba-52
  enable secret pass
  service password-encryption
  no logging console
@@ -701,18 +701,18 @@ conf t
  int gi 0/1
   no shut
   no switchport
-  ip add 10.#$34T#.#$34T#.4 255.255.255.0
+  ip add 10.52.#$34T#.4 255.255.255.0
  int vlan 1
   no shut
-  ip add 10.#$34T#.1.4 255.255.255.0
+  ip add 10.52.1.4 255.255.255.0
   desc DEFAULT-VLAN
  int vlan 10
   no shut
-  ip add 10.#$34T#.10.4 255.255.255.0
+  ip add 10.52.10.4 255.255.255.0
   desc WIFI-VLAN
  int vlan 50
   no shut
-  ip add 10.#$34T#.50.4 255.255.255.0
+  ip add 10.52.50.4 255.255.255.0
   desc CCTV-VLAN
  int vlan 100
   no shut
