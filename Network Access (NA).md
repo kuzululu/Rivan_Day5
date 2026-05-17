@@ -2233,3 +2233,8 @@ config system interface
    edit 1
     set ?
 ~~~
+
+!!for shutdown switchport
+int fa0/1
+switchport mode access
+switchport nonegotiate
