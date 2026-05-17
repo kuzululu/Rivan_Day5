@@ -1,5 +1,5 @@
 
-<!-- Your monitor number = #52# -->
+<!-- Your monitor number = 52 -->
 
 
 ## IPv6 Subnetting
