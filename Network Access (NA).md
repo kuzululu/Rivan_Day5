@@ -1227,6 +1227,14 @@ conf t
 show spanning-tree vlan 1
 ~~~
 
+!disable the error for cable loop
+conf t
+int range fa0/5,fa0/7
+shut
+no shut
+end
+sh int status err
+
 1. Discarding (DIS) - Not forwarding user frames; discards traffic. Listens for BPDUs
 2. Learning (LRN) - Builds MAC address table but does not forward user traffic
 3. Forwarding (FWD) - Forwards user traffic and BPDUs
